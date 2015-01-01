@@ -3,7 +3,7 @@ Title: Om
 */
 
 ##...mig
-Webbutvecklare till yrket, min på fritiden gör jag mycket annat, som att skriva.
+Webbutvecklare till yrket, men på fritiden gör jag mycket annat, som att skriva.
 
 ##...blogg-tekniken
 Till vardags utvecklar jag avancerade webbplatser i Drupal, som hobby testar jag
