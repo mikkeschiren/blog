@@ -26,13 +26,13 @@
     <body>
         <div class="container pure-g">
             <div class="sidebar pure-u">
-              <h2><a href="/">Mikael Schiréns skrivkramp</a></h2>
+              <h2><a href="/skrivkramp">Mikael Schiréns skrivkramp</a></h2>
               <p class="intro">En blogg om mitt skrivande, eller försöken att skriva</p>
                       <div class="pure-menu pure-menu-open pure-menu-custom header">
                     <input type="checkbox" id="toggle" />
                     <label for="toggle" class="toggle" data-open="Meny" data-close="Stäng Meny" onclick></label>
                     <ul class="menu">
-                      <li><a href="/">Hem</a></li>
+                      <li><a href="/skrivkramp">Hem</a></li>
 {% for page in pages %}{% if not(page.date) and not(page.url == base_url~'/') %}
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}{% endfor %}
