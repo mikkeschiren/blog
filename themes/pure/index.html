@@ -45,7 +45,7 @@
             <div class="pure-u-1">
                 <div class="content">
 {% if is_front_page %}
-{% for page in pages %}
+{% for page in paged_pages %}
 {% if page.date and not(page.url == base_url~'/') %}
 		    <div class="post">
 		        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
@@ -53,8 +53,11 @@
 		        <p class="excerpt">{{ page.excerpt }}</p>
             <p><a href="{{ page.url }}">Läs vidare....</a>
 		    </div>
+
 {% endif %}
+
 {% endfor %}
+{{ pagination_links }}
 {% else %}
 		    <div class="post">
 {% if meta.title %}
@@ -65,6 +68,20 @@
             <p class="meta">Publicerad {{ meta.date_formatted }}</p>
 {% endif %}
 		    </div>
+          {% if mcb_is_blog_page %}
+          <div class="bloggposts">
+          <hr />
+          <h2>Senaste bloggposterna</h2>
+               {% set num = 0 %}
+               {% for page in pages if num < 5 %}
+                  {% if page.mcb_is_blog_page %}
+                    {% set num = num + 1 %}
+                    <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }} <small>{{ page.date_formatted }}</small></a> |
+                  {% endif %}
+               {% endfor %}
+             </div>
+          {% endif %}
+
 {% endif %}
                 </div>
             </div>

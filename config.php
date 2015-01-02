@@ -28,3 +28,9 @@ $config['site_title'] = 'Mikael Schirén';
 $config['theme'] = 'pure';
 $config['pages_order'] = 'desc';
 $config['date_format'] = 'j/n Y';
+$config['opengraph_default_image'] = 'http://mikaelschiren.se/skrivkramp/themes/pure/images/logo.jpg';
+
+$config['pagination_limit'] = 3;
+$config['pagination_next_text'] = 'äldre inlägg >';
+$config['pagination_prev_text'] = '< nyare inlägg';
+$config['pagination_page_indicator'] = 'sida';

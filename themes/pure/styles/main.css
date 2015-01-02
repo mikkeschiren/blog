@@ -136,3 +136,8 @@ p, li, a, ul, label {
 div#faust {
   margin-top: 20px;
 }
+
+
+div.bloggposts {
+  margin-bottom: 20px;
+}
