@@ -1,3 +1,4 @@
+<?php
 class Pico_Draft {
 
     public function request_url(&amp;$url)
