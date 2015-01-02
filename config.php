@@ -22,7 +22,9 @@ $config['excerpt_length'] = 50;			// The pages excerpt length (in words)
 $config['custom_setting'] = 'Hello'; 	// Can be accessed by {{ config.custom_setting }} in a theme
 
 */
+
 $config['pages_order_by'] = 'date';
 $config['site_title'] = 'Mikael Schirén';
 $config['theme'] = 'pure';
 $config['pages_order'] = 'desc';
+$config['date_format'] = 'j/n Y';

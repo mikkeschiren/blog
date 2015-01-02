@@ -1,6 +1,6 @@
 body {
     color: #333;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Cardo', serif;
 }
 
 a {
@@ -9,12 +9,12 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 400;
 }
 
 h2 {
     font-size: 1.6em;
-    font-weight: 700;
     line-height: 1em;
     margin: 0;
 }
@@ -30,7 +30,7 @@ h2 {
     color: #fff;
     padding-top: 5em;
     text-align: center;
-    background: #000;
+    background: #840A0A;
 }
 
 .content { padding: 2em 3em 0; }
@@ -96,7 +96,7 @@ blockquote {
         width: 100%;
         position: relative;
         margin: 0;
-        background: #000;
+        background: #840A0A;
         padding-top: 2em;
     }
 
@@ -115,7 +115,24 @@ blockquote {
     }
 }
 
-p {
-  font-family: 'Rokkitt', serif;
+p, li, a, ul, label {
+  font-family: 'Cardo', serif;
   font-weight: normal;
+}
+
+.sidebar h2 a {
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+}
+
+.sidebar .intro {
+  margin-bottom: 40px;
+}
+
+.sidebar li {
+  background-color: rgb(74, 17, 17);
+}
+
+div#faust {
+  margin-top: 20px;
 }

@@ -18,17 +18,17 @@
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
         <link rel="stylesheet" href="{{ theme_url }}/styles/main.css">
         <link rel="stylesheet" href="{{ theme_url }}/styles/navigataur.css">
-        <link href='http://fonts.googleapis.com/css?family=Rokkitt%7COswald&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="{{ theme_url }}/javascript/vendor/respond.min.js"></script>
     </head>
 
     <body>
         <div class="container pure-g">
             <div class="sidebar pure-u">
-                <a href="{{ base_url }}">
-                    <img src="{{ theme_url }}/images/logo.jpg" alt="{{ site_title }}" />
-                </a>
-                <div class="pure-menu pure-menu-open pure-menu-custom header">
+              <h2><a href="/">Mikael Schiréns skrivkramp</a></h2>
+              <p class="intro">En blogg om mitt skrivande, eller försöken att skriva</p>
+                      <div class="pure-menu pure-menu-open pure-menu-custom header">
                     <input type="checkbox" id="toggle" />
                     <label for="toggle" class="toggle" data-open="Meny" data-close="Stäng Meny" onclick></label>
                     <ul class="menu">
@@ -37,7 +37,9 @@
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}{% endfor %}
                     </ul>
-
+                    <div id="faust">
+                      <a href="{{ base_url }}"><img src="{{ theme_url }}/images/faust.jpg" alt="{{ site_title }}" /></a>
+                    </div>
                 </div>
             </div>
             <div class="pure-u-1">
@@ -58,11 +60,10 @@
 {% if meta.title %}
 		        <h1>{{ meta.title }}</h1>
 {% endif %}
-{% if meta.date %}
-		        <p class="meta">Publicerad {{ meta.date_formatted }}</p>
-{% endif %}
 		        {% spaceless %}{{ content }}{% endspaceless %}
-
+{% if meta.date %}
+            <p class="meta">Publicerad {{ meta.date_formatted }}</p>
+{% endif %}
 		    </div>
 {% endif %}
                 </div>
