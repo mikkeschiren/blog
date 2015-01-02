@@ -37,7 +37,7 @@
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}{% endfor %}
                     </ul>
-                  
+
                 </div>
             </div>
             <div class="pure-u-1">
@@ -47,7 +47,7 @@
 {% if page.date and not(page.url == base_url~'/') %}
 		    <div class="post">
 		        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-		        <p class="meta">Publicerad {{ post.published_at|date("m/d/Y") }}</p>
+		        <p class="meta">Publicerad {{ meta.date_formatted }}</p>
 		        <p class="excerpt">{{ page.excerpt }}</p>
             <p><a href="{{ page.url }}">Läs vidare....</a>
 		    </div>
